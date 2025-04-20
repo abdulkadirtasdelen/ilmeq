@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://yourdomain.org/schemas/document.schema.json",
-  "title": "Document Metadata Schema",
-  "description": "Hash-tabanlı belge tanımı",
+  "$id": "ilmek.schema.json",
+  "title": "İLMEK: Interlinked Ledger Metadata for Educational Knowledge",
+  "description": "A schema for defining cryptographic document identities and inter-document relations within verifiable academic networks.",
   "type": "object",
   "required": ["document_id", "type", "hash", "status"],
   "properties": {
