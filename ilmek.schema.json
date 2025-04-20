@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yourdomain.org/schemas/document.schema.json",
+  "title": "Document Metadata Schema",
+  "description": "Hash-tabanlı belge tanımı",
+  "type": "object",
+  "required": ["document_id", "type", "hash", "status"],
+  "properties": {
+    "document_id": {
+      "type": "string",
+      "pattern": "^doc:[a-z]+:[0-9a-fA-F]+$"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "Diploma",
+        "Transcript",
+        "ThesisDocument",
+        "DiplomaSupplement",
+        "LanguageCertificate",
+        "InternshipCertificate",
+        "EquivalencyCertificate",
+        "EquivalencyExamResult"
+      ]
+    },
+    "issuer": {
+      "type": "string",
+      "description": "Issuer DID"
+    },
+    "recipient": {
+      "type": "string",
+      "description": "Recipient DID"
+    },
+    "issued_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "hash": {
+      "type": "string",
+      "pattern": "^sha256:[a-fA-F0-9]{64}$"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "revoked", "derived", "pending", "under_review"]
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["relation_type", "target_document"],
+        "properties": {
+          "relation_type": {
+            "type": "string",
+            "enum": [
+              "is_parent_of",
+              "is_child_of",
+              "requires",
+              "is_required_by",
+              "is_based_on",
+              "supplements",
+              "required_for",
+              "associated_with"
+            ]
+          },
+          "target_document": {
+            "type": "string"
+          },
+          "effect_on_target": {
+            "type": "string",
+            "enum": [
+              "no_effect",
+              "inherit_status",
+              "linked_validation",
+              "revocation_triggers_review",
+              "optional"
+            ]
+          }
+        }
+      },
+      "default": [],
+      "nullable": true
+    }
+  }
+}
