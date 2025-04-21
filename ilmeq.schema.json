@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "ilmek.schema.json",
+  "$id": "https://abdulkadirtasdelen.github.io/ilmeq/ilmeq.schema.json"
   "title": "İLMEQ: Interlinked Ledger Metadata for Educational Qualifications",
   "description": "A schema for defining cryptographic document identities and inter-document relations within verifiable academic networks.",
   "type": "object",
