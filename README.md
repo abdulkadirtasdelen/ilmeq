@@ -1,6 +1,6 @@
-# 📘 İLMEQ: Interlinked Ledger Metadata for Educational Qualifications
+# 📘 ILMEQ: Interlinked Ledger Metadata for Educational Qualifications
 
-**İLMEQ** (Interlinked Ledger Metadata for Educational Qualifications), eğitimsel belgelerin merkeziyetsiz, doğrulanabilir ve birbirleriyle ilişkisel biçimde tanımlanmasını sağlayan bir JSON Schema tanımıdır.
+**ILMEQ** (Interlinked Ledger Metadata for Educational Qualifications), eğitimsel belgelerin merkeziyetsiz, doğrulanabilir ve birbirleriyle ilişkisel biçimde tanımlanmasını sağlayan bir JSON Schema tanımıdır.
 
 Bu şema; diplomalar, transkriptler, tez belgeleri ve diğer akademik belgeler için kriptografik kimlikler tanımlamaya, belgeler arası ilişkiler kurmaya ve belge geçerlilik durumlarını izlemeye olanak tanır.
 
