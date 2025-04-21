@@ -41,7 +41,7 @@
     },
     "status": {
       "type": "string",
-      "enum": ["active", "passive", "revoked", "expired","derived", "pending", "suspended", "under_review", "archived",]
+      "enum": ["active", "passive", "revoked", "expired","derived", "pending", "suspended", "under_review", "archived"]
     },
     "relations": {
       "type": "array",
