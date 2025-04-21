@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "ilmek.schema.json",
-  "title": "İLMEK: Interlinked Ledger Metadata for Educational Knowledge",
+  "title": "İLMEQ: Interlinked Ledger Metadata for Educational Qualifications",
   "description": "A schema for defining cryptographic document identities and inter-document relations within verifiable academic networks.",
   "type": "object",
   "required": ["document_id", "type", "hash", "status"],
