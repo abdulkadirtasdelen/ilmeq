@@ -4,6 +4,10 @@
 
 Bu şema; diplomalar, transkriptler, tez belgeleri ve diğer akademik belgeler için kriptografik kimlikler tanımlamaya, belgeler arası ilişkiler kurmaya ve belge geçerlilik durumlarını izlemeye olanak tanır.
 
+This paper accepted and will be presented 26-27 August 2025 at ICCCE, Malaysia
+Conference Paper Name: A Cryptographically-Linked Metadata Schema for Academic Credential Interoperability: the ILMEQ Model
+Conference Name: 2025 10th International Conference on Computer and Communication Engineering (ICCCE)
+
 ---
 
 ## 📂 Dosya
